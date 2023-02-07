@@ -13,16 +13,6 @@ const Main = () => {
     setInputs((values: any) => ({ ...values, [name]: value }));
   };
 
-//   var jsonData = {
-//     "restaurant_name": inputs.restaurant_name,
-//     "contact_name": inputs.contact_name,
-//     "pincode": inputs.pincode,
-//     "location": inputs.location,
-//     "website": inputs.website,
-//     "phone_number": inputs.phone_number,
-//     "average_daily_transactions": inputs.average_daily_transactions,
-//   };
-
 async function postFormDataAsJson({ url, formData }:any) {
 	const plainFormData = Object.fromEntries(formData.entries());
 	const formDataJsonString = JSON.stringify(plainFormData);
