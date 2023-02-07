@@ -23,3 +23,4 @@ folders structure is broken  into assets(static files), components(render files)
 A form is created to register user for a given restaurant, it uses react form , calls the  post request , sends the data and returns status code.
 
 for better handling of data and states Redux could be used but it has no use in this application.
+Also jwt tokens can be used to secure the api with implementation of login and signup protocols.
