@@ -1,0 +1,134 @@
+$screenWidth: 1440;
+$screenHeight: 1024;
+
+@function px-to-vh($px) {
+  @return (($px / $screenHeight) * 100) * 1vh;
+}
+
+@function px-to-vw($px) {
+  @return (($px / $screenWidth) * 100) * 1vw;
+}
+
+@function em-to-vh($em) {
+  @return ((($em * 16) / $screenHeight) * 100) * 1vh;
+}
+
+@function em-to-vw($em) {
+  @return ((($em * 16) / $screenWidth) * 100) * 1vw;
+}
+
+#header{
+    display: grid;
+    grid-template-columns: px-to-vw(400) px-to-vw(740) px-to-vw(300);
+    background-color: white;
+    box-shadow: 10px;
+    position: fixed;
+
+    .header-title{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: px-to-vh(50);
+        padding: px-to-vw(20);
+        margin-left: px-to-vw(100);
+        font-weight: 500;
+        .header-subtitle{
+            font-size: px-to-vh(30);
+        }
+    }
+
+
+    .header-buttons {
+        display: grid;
+        grid-template-columns: px-to-vw(150) px-to-vw(150);
+
+        .header-login {
+            background-color: black; 
+            border: none;
+            color: white;
+            padding: px-to-vh(25);
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 20px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            margin: 20px;
+        }
+    
+        .header-login:hover {
+            background-color: white;
+            border:black 3px solid;
+            color: black;
+        }
+
+        .header-signin {
+            background-color: white; 
+            border:black 3px solid;
+            color: black;
+            padding: px-to-vh(25);
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 20px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            margin: 20px;
+        }
+    
+        .header-signin:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+.bgimg{
+    height: 100vh;
+    background-image: url("../assets/regis-1.jpg");
+    background-size: 100vw 99.796875vh;
+    background-repeat: no-repeat;
+}
+
+.form{
+    position: absolute;
+    height: px-to-vh(800);
+    width: px-to-vw(350);
+    background-color: white;
+    border-radius: 5px;
+    margin-left: px-to-vw(800);
+    margin-top: px-to-vh(200);
+
+    .inputbox{
+        margin-top: 10px;
+    }
+
+    label{
+        padding: px-to-vw(20);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: px-to-vw(16);
+        font-weight: 300;
+    }
+    input{
+        padding: px-to-vw(10);
+        padding-left: px-to-vw(130);
+        margin-left: px-to-vw(20);
+        border:black 1px solid;
+        border-radius: 5px;
+    }
+
+    .form-btn{
+        background-color: black; 
+        border: none;
+        color: white;
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-left: 60px;
+    }
+}

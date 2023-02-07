@@ -1,0 +1,93 @@
+:root {
+  --background: url("../assets/bg-img1.avif");
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 27.7777777778vw 51.3888888889vw 20.8333333333vw;
+  background-color: white;
+  box-shadow: 10px;
+  position: fixed;
+}
+#header .header-title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4.8828125vh;
+  padding: 1.3888888889vw;
+  margin-left: 6.9444444444vw;
+  font-weight: 500;
+}
+#header .header-buttons {
+  display: grid;
+  grid-template-columns: 10.4166666667vw 10.4166666667vw;
+}
+#header .header-buttons .header-login {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 2.44140625vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 20px;
+}
+#header .header-buttons .header-login:hover {
+  background-color: white;
+  border: black 3px solid;
+  color: black;
+}
+#header .header-buttons .header-signin {
+  background-color: white;
+  border: black 3px solid;
+  color: black;
+  padding: 2.44140625vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 20px;
+}
+#header .header-buttons .header-signin:hover {
+  background-color: black;
+  color: white;
+}
+
+.landing {
+  height: 100vh;
+  background-image: var(--background);
+  background-size: 100vw 99.796875vh;
+  background-repeat: no-repeat;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.services .order-img {
+  background-image: url("../assets/food-del-1.jpg");
+  background-size: contain;
+  height: 29.296875vh;
+  width: 27.7777777778vw;
+  margin: 4.296875vh;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+.services .order-details {
+  padding: 5px;
+  font-size: 2.0833333333vw;
+  font-weight: 500;
+  margin-left: 1.3888888889vw;
+}
+.services .order-link {
+  padding: 5px;
+  margin-left: 1.3888888889vw;
+}
+.services .order-link a {
+  color: black;
+}/*# sourceMappingURL=landing.css.map */

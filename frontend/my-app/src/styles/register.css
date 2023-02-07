@@ -1,0 +1,105 @@
+#header {
+  display: grid;
+  grid-template-columns: 27.7777777778vw 51.3888888889vw 20.8333333333vw;
+  background-color: white;
+  box-shadow: 10px;
+  position: fixed;
+}
+#header .header-title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4.8828125vh;
+  padding: 1.3888888889vw;
+  margin-left: 6.9444444444vw;
+  font-weight: 500;
+}
+#header .header-title .header-subtitle {
+  font-size: 2.9296875vh;
+}
+#header .header-buttons {
+  display: grid;
+  grid-template-columns: 10.4166666667vw 10.4166666667vw;
+}
+#header .header-buttons .header-login {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 2.44140625vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 20px;
+}
+#header .header-buttons .header-login:hover {
+  background-color: white;
+  border: black 3px solid;
+  color: black;
+}
+#header .header-buttons .header-signin {
+  background-color: white;
+  border: black 3px solid;
+  color: black;
+  padding: 2.44140625vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 20px;
+}
+#header .header-buttons .header-signin:hover {
+  background-color: black;
+  color: white;
+}
+
+.bgimg {
+  height: 100vh;
+  background-image: url("../assets/regis-1.jpg");
+  background-size: 100vw 99.796875vh;
+  background-repeat: no-repeat;
+}
+
+.form {
+  position: absolute;
+  height: 78.125vh;
+  width: 24.3055555556vw;
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 55.5555555556vw;
+  margin-top: 19.53125vh;
+}
+.form .inputbox {
+  margin-top: 10px;
+}
+.form label {
+  padding: 1.3888888889vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.1111111111vw;
+  font-weight: 300;
+}
+.form input {
+  padding: 0.6944444444vw;
+  padding-left: 9.0277777778vw;
+  margin-left: 1.3888888889vw;
+  border: black 1px solid;
+  border-radius: 5px;
+}
+.form .form-btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 60px;
+}/*# sourceMappingURL=register.css.map */
